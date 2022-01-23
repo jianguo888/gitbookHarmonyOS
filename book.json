@@ -1,0 +1,158 @@
+{
+  "title": "玩转服务器",
+  "description": "玩转服务器",
+   "author": "Breeze",
+  "language": "zh-hans",
+  "root": ".",
+  "plugins": [
+    "github-buttons@2.1.0",
+    "edit-link",
+    "splitter",
+    "tbfed-pagefooter",
+    "expandable-chapters",
+    "back-to-top-button",
+    "code",
+    "pageview-count",
+    "popup",
+    "search-plus",
+    "-lunr",
+    "-search",
+    "splitter",
+    "-sharing",
+    "sharing-plus",
+    "theme-lou",
+    "anchors",
+    "changyan",
+    "readmore"
+  ],
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "pluginsConfig": {
+    "github-buttons": {
+      "repo": "ITmxs/Flutter-Laboratory",
+      "types": [
+        "star",
+        "watch",
+        "fork"
+      ],
+      "size": "small"
+    },
+    "readmore": {
+      "id": "container",
+      "blogId": "27976-1633824334554-562",
+      "name": "明天也要加油呀",
+      "qrcode": "https://luckly007.oss-cn-beijing.aliyuncs.com/image/qrcod.jpg",
+      "keyword": "关注"
+    },
+    "changyan": {
+      "appid": "cyvHoCPAs",
+      "conf": "0440cfc4168ba95d73cfc52dd4d5c60b"
+    },
+    "edit-link": {
+      "base": "https://github.com/ITmxs/Flutter-Laboratory/edit/master/",
+      "label": "Edit This Page"
+    },
+    "tbfed-pagefooter": {
+      "copyright": "&copy luckly ",
+      "modify_label": "该文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "pluginsConfig": {
+      "expandable-chapters": {}
+    },
+    "sharing": {
+      "douban": false,
+      "facebook": false,
+      "google": false,
+      "pocket": false,
+      "qq": false,
+      "qzone": false,
+      "twitter": false,
+      "weibo": false,
+      "all": [
+        "qq",
+        "qzone",
+        "viber",
+        "whatsapp",
+        "douban",
+        "facebook",
+        "google",
+        "instapaper",
+        "linkedin",
+        "messenger",
+        "twitter",
+        "weibo"
+      ]
+    },
+    "theme-lou": {
+      "color": "#FF4848",
+      "favicon": "assets/favicon.ico",
+      "logo": "assets/logo.png",
+      "appleTouchIconPrecomposed152": "assets/avatar.png",
+      "copyrightLogo": "assets/copyright.png",
+      "forbidCopy": true,
+      "search-placeholder": "输入关键字搜索",
+      "book-summary-title": "文章目录",
+      "book-anchor-title": "本章目录",
+      "hide-elements": [
+        ".summary .gitbook-link",
+        ".summary .divider"
+      ],
+      "copyright": {
+        "author": "breeze"
+      }
+    }
+  },
+  "variables": {
+    "themeLou": {
+      "nav": [
+        {
+          "target": "_blank",
+          "url": "https://blog.51cto.com/jianguo",
+          "name": "51CTO博客"
+        },
+        
+        {
+          "target": "_blank",
+          "url": "https://space.bilibili.com/480883651",
+          "name": "哔哩哔哩"
+        },
+        
+        {
+          "target": "_blank",
+          "url": "https://blog.csdn.net/qq_39132095?spm=1000.2115.3001.5343",
+          "name": "CSDN博客"
+        },{
+          "target": "_blank",
+          "url": "https://juejin.cn/user/3843548384077192",
+          "name": "稀土掘金"
+        },{
+          "target": "_blank",
+          "url": "https://github.com/ITmxs",
+          "name": "Github"
+        },{
+          "target": "_blank",
+          "url": "https://gitee.com/itmxs",
+          "name": "Gitee"
+        }
+      
+      ],
+      "footer": {
+        "donate": {
+          "wechat": "https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210922202901895.png",
+          "wxpay": "https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210922202901895.png",
+          "alipay": "https://luckly007.oss-cn-beijing.aliyuncs.com/img/image-20210922202843746.png",
+          "title": "『赠人玫瑰 🌹 手有余香 』",
+          "avatar": "http://xkapp-uat.oss-cn-hangzhou.aliyuncs.com/2e7a3f70-80ab-4b50-93ec-a04dfeef949b/avatar-100.png",
+          "nickname": "breeze",
+          "button": "打赏",
+          "alipayText": "支付宝",
+          "wechatText": "微信",
+          "message": "随意打赏，但不要超过一顿早餐钱 💕"
+        }
+      },
+      "copyright": true
+    }
+  }
+}
