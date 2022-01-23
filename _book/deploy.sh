@@ -1,6 +1,6 @@
 #!/bin/bash
 
-
+git pull    origin master 
 git add -A
 
 # Commit changes.

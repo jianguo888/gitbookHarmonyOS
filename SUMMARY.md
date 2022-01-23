@@ -5,7 +5,7 @@
 - [01鸿蒙开发第一节](connent/鸿蒙/01鸿蒙开发第一节.md)
 - [02工程介绍](connent/鸿蒙/02工程介绍.md)
 - [03编辑器使用技巧](connent/鸿蒙/03编辑器使用技巧.md)
-- [04鸿蒙-webview的使用和JS交互（附源码）](connent/鸿蒙/04鸿蒙-webview的使用和JS交互（附源码）.md)
+- [04鸿蒙webview的使用和JS交互](connent/鸿蒙/04鸿蒙webview的使用和JS交互.md)
 - [05从零到1学鸿蒙](connent/鸿蒙/05从零到1学鸿蒙.md)
 - [06Java UI框架初探和路由跳转实现](connent/鸿蒙/06路由跳转.md)
 - [07Config.json](connent/鸿蒙/07config.json.md)

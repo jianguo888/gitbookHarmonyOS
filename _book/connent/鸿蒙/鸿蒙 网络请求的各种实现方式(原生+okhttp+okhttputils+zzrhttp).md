@@ -1,13 +1,21 @@
-##前言：
+##  前言：
+
 各位同学大家好，有段时间没有给大家更新文章。具体多久呢我也不记得，刚刚过完2020年，我在新的2021年里我还在继续学习鸿蒙的的开发。最近看了一下鸿蒙的网络请求部分的内容（这部分主要还是按照鸿蒙开发文档里面提到 java ui，js  ui的网络请求请大家查看官方的文档即可）那么废话不多说我们正式开始。
-##准备工作：
+
+## 准备工作：
+
 1 安装鸿蒙开发环境 大家可以看我之前的文章
 华为鸿蒙系统开发初体验 ：[https://www.jianshu.com/p/f94c847c7fdc](https://www.jianshu.com/p/f94c847c7fdc)
 ![image.png](https://luckly007.oss-cn-beijing.aliyuncs.com/image/6865547-45d343021eaea30d.png)
-##具体实现
-###鸿蒙系统网络访问基础配置
-- ####1添加网络访问权限
+
+## 具体实现
+
+### 鸿蒙系统网络访问基础配置
+
+#### 1添加网络访问权限
+
 跟Android类似，要访问网络，我们首先要配置网络访问权限，在config.json的"module"节点最后，添加上网络权限代码
+
 ```
 "reqPermissions": [
       {
@@ -17,8 +25,9 @@
     ]
 ```
 ![image.png](https://luckly007.oss-cn-beijing.aliyuncs.com/image/6865547-531208f4c972eaed.png)
-- #### 2 设置访问模式
+#### 2 设置访问模式
 鸿蒙的默认是https访问模式，如果您的请求网址是http开头的，请在config.json文件中的deviceConfig下，添加如下设置
+
 ```
 deviceConfig": { 
      "default": { 
@@ -30,9 +39,11 @@ deviceConfig": {
 ```
 ![image.png](https://luckly007.oss-cn-beijing.aliyuncs.com/image/6865547-6dcbedc67b6de310.png)
 ## 具体代码实现：
-- ####1JAVA原生请求
+#### JAVA原生请求
+
 由于鸿蒙系统支持Java开发，所以我们可以直接使用Java原生的Api来进行网络访问
 该方式使用了java的url.openConnection() Api来获取网络数据
+
 ### 请求工具类
 我们这边写了一个基于HttpURLConnection 封装的工具类来处理我们的原生网络请求 
 ```
@@ -374,10 +385,13 @@ public class HttpX509TrustManager implements X509TrustManager {
 ```
 ![image.png](https://luckly007.oss-cn-beijing.aliyuncs.com/image/6865547-9fec59deb675a1d6.png)
 我们在控制台看到日志输出了请求返回的数据   
-- ##okhttp 请求 
+
+### okhttp 请求 
+
 首先要添加依赖  我这边是用jar包本地依赖 当然你再build.gradle里面去添加gradle命令 然后从仓库去拉取依赖也是可以的
 ![image.png](https://luckly007.oss-cn-beijing.aliyuncs.com/image/6865547-759c86ee7c2b649e.png )
 具体代码
+
 ```
     public  void  okhttpNet() {
         OkHttpClient client = new OkHttpClient();
@@ -399,8 +413,10 @@ public class HttpX509TrustManager implements X509TrustManager {
     }
 
 ```
-- ###okhttputils请求
-  (这个是张鸿样大神对okttp的二次封装的一个框架 也比较好用 现在已经不维护了)依赖也是用jar包在本地依赖 也可以在build.gradle里面去添加gradle命令也行
+### okhttputils请求
+
+(这个是张鸿样大神对okttp的二次封装的一个框架 也比较好用 现在已经不维护了)依赖也是用jar包在本地依赖 也可以在build.gradle里面去添加gradle命令也行
+
 ```
    public   void   okhttpUtilsNet(){
         OkHttpUtils.get().
@@ -419,13 +435,15 @@ public class HttpX509TrustManager implements X509TrustManager {
         });
     }
 ```
-- ##zzrHttp
+### zzrHttp
+
 这个是一个ZZR老师 老师的一个开源库 我这里就不多讲 简单说一下  详细的可以去看他的教程哈  
 教程地址 ：https://edu.51cto.com/course/25200.html
 zzrhttp使用需要在build.gradle里面去添加依赖 
 ![image.png](https://luckly007.oss-cn-beijing.aliyuncs.com/image/6865547-1db02c14df267485.png)
 然后sing now 点击拉取依赖 
 具体代码演示：
+
 ```
   public  void  zzrHttp(){
         ZZRHttp.get(url, new ZZRCallBack.CallBackString() {
@@ -442,7 +460,9 @@ zzrhttp使用需要在build.gradle里面去添加依赖
     }
 ```
 以上呢就是我给大家提供的几种鸿蒙开发中网络请求的方式 当然也还有其他的基于纯java语言封装的网络请求的库 理论上在鸿蒙上面都是可以使用的 有兴趣同学可以私下多了解 我这边由于篇幅原因 就不展开细讲了。
-##最后总结：
+
+## 最后总结：
+
 由于鸿蒙开发里面java ui部分使用的是java做基础语言 所以使得 我们java里面提供的网络请求的api到可以很好直接在鸿蒙上面使用 以及包括出名的okhttp okhttputils 知名框架再鸿蒙上也可以完美的使用 ，所以整个网络部分请求的部分还算简单 当然啦这些都还是基础 更加友好的网络请求的使用方式各位同学可以根据实际情况去适当封装处理 来更好实现的我们的需求。 最后希望我的文章能帮助到各位解决问题 ，以后我还会贡献更多有用的代码分享给大家。各位同学如果觉得文章还不错 ，麻烦给关注和star，小弟在这里谢过啦
 
   
