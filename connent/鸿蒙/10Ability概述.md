@@ -469,13 +469,10 @@ URI示例：
 
 - 跨设备场景：dataability://*device_id*/*com.domainname.dataability.persondata*/*person*/*10*
 
-- 本地设备：dataability:///
+- 本地设备：dataability:///com.domainname.dataability.persondata/person/10
 
-  com.domainname.dataability.persondata/person/10
+  说明：本地设备的“device_id”字段为空，因此在“dataability:”后面有三个“/”。
 
-  说明
-
-  本地设备的“device_id”字段为空，因此在“dataability:”后面有三个“/”。
 
 
 
