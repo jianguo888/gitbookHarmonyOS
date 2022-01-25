@@ -84,6 +84,8 @@ ohos.global.resource.RawFileEntry rawFileEntry = resManager.getRawFileEntry("res
 
 ## 系统资源文件
 
-目前支持的部分系统资源文件详见1
+目前支持的部分系统资源文件
 
 ![image-20220123120153810](https://luckly007.oss-cn-beijing.aliyuncs.com/images/image-20220123120153810.png)
+
+希望这些对你的鸿蒙开发之路有帮助。
