@@ -19,5 +19,5 @@
 - [15鸿蒙HarmonyOS应用开发之资源文件](connent/鸿蒙/15鸿蒙HarmonyOS应用开发之资源文件.md)
 - [16使用低代码进行开发](connent/鸿蒙/16使用低代码进行开发.md)
 - [17使用ArkUI开发](connent/鸿蒙/17使用ArkUI开发.md)
-
+- [18鸿蒙那些事儿](connent/鸿蒙/18鸿蒙那些事儿.md)
 

@@ -257,26 +257,26 @@ public class ServiceAbility extends Ability {
 }
 ```
 
-2. 注册Service。
+2.注册Service。
 
-   Service也需要在应用配置文件中进行注册，注册类型type需要设置为service。
+Service也需要在应用配置文件中进行注册，注册类型type需要设置为service。
 
-   ```
-   {
-       "module": {
-           "abilities": [         
-               {    
-                   "name": ".ServiceAbility",
-                   "type": "service",
-                   "visible": true
-                   ...
-               }
-           ]
-           ...
-       }
-       ...
-   }
-   ```
+```
+{
+    "module": {
+        "abilities": [         
+            {    
+                "name": ".ServiceAbility",
+                "type": "service",
+                "visible": true
+                ...
+            }
+        ]
+        ...
+    }
+    ...
+}
+```
 
 ### 启动Service
 
@@ -387,7 +387,7 @@ protected IRemoteObject onConnect(Intent intent) {
 
 ### Service Ability生命周期
 
-与Page类似，Service也拥有生命周期，如[图1](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ability-service-lifecycle-0000000000044472#ZH-CN_TOPIC_0000001077123656__fig49671548164217)所示。根据调用方法的不同，其生命周期有以下两种路径：
+与Page类似，Service也拥有生命周期，如图1所示。根据调用方法的不同，其生命周期有以下两种路径：
 
 - 启动
 
@@ -476,7 +476,7 @@ URI示例：
 
 ## 总结
 
- 说实话写这一篇文章花费了一番功夫，不断的浏览官网上的文档然后结合实际来写，写的不是很好，请勿见怪，另外就是觉得官网的教程只是一部分，更多的需要开发者自行去探索和发现，正所谓师傅领进门，修行在个人，鸿蒙需要成长，我们开发者同样也要成长，也许不会前进的路上会很坎坷，但经历过后就会发现另一番风景，我是初学者，保持初学的态度和动力，感谢您的阅读，山高水长，后会有期！
+ 说实话写这一篇文章花费了一番功夫，不断的浏览官网上的文档然后结合实际来写，写的不是很好，请勿见怪，另外就是觉得官网的教程只是一部分，更多的需要开发者自行去探索和发现，正所谓师傅领进门，修行在个人，鸿蒙需要成长，我们开发者同样也要成长，也许不会前进的路上会很坎坷，但经历过后就会发现另一番风景，对于鸿蒙，我是初学者，所以更多是以初学者的态度来记录。而且我学习的重要的途径就是这样，一边学习，一边记录，这样在以后要用到的时候查看自己的笔记就好。最后希望我们大家一起进步。为鸿蒙的发展与宣传贡献自己的一份力量。
 
 
 
