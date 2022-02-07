@@ -67,7 +67,7 @@
 
 基于JS扩展的类Web开发范式的方舟开发框架是一种跨设备的高性能UI开发框架，支持声明式编程和跨设备多态UI。
 
-关于组件和接口的详细参考文档请参见[JS API参考](https://developer.harmonyos.com/cn/docs/documentation/doc-references/js-apis-overview-0000001056361791)。
+
 
 ### 基础能力
 
@@ -95,7 +95,7 @@
 
 - Application
 
-  应用层表示开发者开发的[FA](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ability-ability-overview-0000000000029852)应用，这里的FA应用特指JS FA应用。使用Java开发FA应用请参考[Java UI框架](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ui-java-overview-0000000000500404)。
+  应用层表示开发者开发的FA应用，这里的FA应用特指JS FA应用。
 
 - Framework
 
