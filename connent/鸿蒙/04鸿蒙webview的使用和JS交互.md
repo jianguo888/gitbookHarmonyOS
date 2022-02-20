@@ -360,9 +360,25 @@ webview.addJsCallback(JS_NAME, str -> {
 
 
 
+感谢没用的喵叔指出的问题
+
+![image-20220213100056347](https://luckly007.oss-cn-beijing.aliyuncs.com/images/image-20220213100056347.png)
 
 
 
+个人认为这两句有点多余，默认处理http和https的逻辑应该就是return true，在父类里已经实现了。所以，这个方法直接改成这样：
+
+```java
+webview.setWebAgent(new WebAgent() {
+    @Override
+    public boolean isNeedLoadUrl(WebView webView, ResourceRequest request) {
+        if (request == null || request.getRequestUrl() == null) {
+            return false;
+        }
+        return super.isNeedLoadUrl(webView, request);
+    }
+});
+```
 
 
 
