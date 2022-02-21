@@ -22,4 +22,5 @@
 - [18鸿蒙那些事儿](connent/鸿蒙/18鸿蒙那些事儿.md)
 - [19harmonyos和OpenHarmony的区别和发展](connent/鸿蒙/19harmonyos和OpenHarmony的区别和发展.md)
 - [20鸿蒙支持的机型](connent/鸿蒙/21鸿蒙支持的机型.md)
+- [21鸿蒙相关书籍](connent/鸿蒙/21鸿蒙支持的机型.md)
 
