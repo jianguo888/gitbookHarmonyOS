@@ -101,9 +101,65 @@ OpenHarmony支持如下几种系统类型：
 
   对子系统的进一步拆分，可复用的软件单元，它包含源码、配置文件、资源文件和编译脚本；能独立构建，以二进制方式集成，具备独立验证能力的二进制单元。
 
+### 子系统
+
+### AI业务子系统
+
+#### AI业务子系统介绍
+
+AI业务子系统是OpenHarmony提供原生的分布式AI能力的子系统。本次开源范围是提供了统一的AI引擎框架，实现算法能力快速插件化集成。框架中主要包含插件管理、模块管理和通信管理等模块，对AI算法能力进行生命周期管理和按需部署。后续，会逐步定义统一的AI能力接口，便于AI能力的分布式调用。同时，提供适配不同推理框架层级的统一推理接口。
+
+![AI引擎框架](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20220225093212249.png)
+
+#### AI业务子系统目录
+
+```
+/foundation/ai/engine                        # AI子系统主目录
+├── interfaces
+│  └── kits                                  # AI子系统对外接口
+└── services
+│  ├── client                                # AI子系统Client模块
+│  │  ├── client_executor                    # Client模块执行主体
+│  │  └── communication_adapter              # Client模块通信适配层，支持拓展
+│  ├── common                                # AI子系统公共工具、协议模块
+│  │  ├── platform
+│  │  ├── protocol
+│  │  └── utils
+│  └── server                                # AI子系统服务端模块
+│  │  ├── communication_adapter              # Server模块通信适配层，支持拓展
+│  │  ├── plugin
+│  │     ├── asr
+│  │        └── keyword_spotting             # ASR算法插件参考：唤醒词识别
+│  │     └── cv
+│  │        └── image_classification         # CV算法插件参考：图片分类
+│  │  ├── plugin_manager
+│  │  └── server_executor                    # Server模块执行主体
+```
+
+#### AI业务子系统约束
+
+- **语言限制**：C/C++语言
+- **操作系统限制**：OpenHarmony操作系统
+- **AI服务启动的约束与限制**：SAMGR（System Ability Manager）启动且运行正常
+
+#### AI业务子系统使用
+
+AI业务子系统的使用主要有以下四个场景:
+
++ **AI业务子系统编译**
++ **插件开发**
++ **插件SDK开发**
++ **sample开发**
+
+具体如何使用[请点击这儿](https://gitee.com/openharmony/docs/blob/master/zh-cn/readme/AI%E4%B8%9A%E5%8A%A1%E5%AD%90%E7%B3%BB%E7%BB%9F.md#%E4%BD%BF%E7%94%A8)
+
+
+
 
 
 ## 参考链接
 
 - [OpenHarmon技术架构](https://gitee.com/openharmony#section2502124574318)
+- [OpenHarmony中相关的子系统简介](https://gitee.com/openharmony/docs/tree/master/zh-cn/readme)
+- 
 

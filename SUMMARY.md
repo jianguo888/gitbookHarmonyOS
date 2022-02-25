@@ -26,11 +26,19 @@
 
 
 
-
-
 ## OpenHarmony
 
 - [01OpenHarmony的基础介绍](connent/OpenHarmony/01OpenHarmony的介绍.md)
+
+
+
+
+
+
+
+## 小熊派
+
+https://bbs.elecfans.com/group_1478
 
 
 
