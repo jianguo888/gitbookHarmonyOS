@@ -1,3 +1,5 @@
+
+
 为鸿蒙说两句公道话，鸿蒙是安卓的套壳吗？
 
 > 作者：坚果
@@ -5,6 +7,12 @@
 > 公众号："[大前端之旅](https://mp.weixin.qq.com/s/aJvihD4dzEJyOV3q6_Zeng)"
 >
 > 华为云享专家，InfoQ签约作者，阿里云专家博主，51CTO博客首席体验官，[开源项目GVA成员之一](https://www.gin-vue-admin.com/)，专注于大前端技术的分享，包括Flutter,小程序,安卓，VUE，JavaScript。
+
+这才是正确的做法，应该学习！
+
+![image-20220307125320871](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20220307125320871.png)
+
+
 
 ### Andoid
 
