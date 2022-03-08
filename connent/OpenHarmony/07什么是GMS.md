@@ -1,18 +1,24 @@
+
+
+## 华为被卡脖子，到底卡的是什么？
+
+> 作者：坚果
+>
+> 公众号："[大前端之旅](https://mp.weixin.qq.com/s/aJvihD4dzEJyOV3q6_Zeng)"
+>
+> 华为云享专家，InfoQ签约作者，阿里云专家博主，51CTO博客首席体验官，[开源项目GVA成员之一](https://www.gin-vue-admin.com/)，专注于大前端技术的分享，包括Flutter,小程序,安卓，VUE，JavaScript。
+
 GMS，全称为Google Mobile Service，即谷歌移动服务。GMS是Android系统灵魂所在，是一套谷歌旗下的应用程序和基于云的软件服务，当用户使用谷歌服务的时候，谷歌可以把广告嵌入各种谷歌的服务中，是谷歌的重要收入来源渠道。
 
-GMS的作用包括使用谷歌核心Apps（即Google应用“全家桶”），包括YouTube，Google Now，Google Play store，Google Play Games，Google Maps（谷歌地图）等，及将基于Google账户的系统数据同步，备份，包括联系人，邮件，文件同步，游戏进度，多人线上联机等。
+
 
 
 
 问题的关键是，GMS并非安卓开源项目（Android Open Source Project, 即AOSP）的一部分。只有当安卓智能手机制造商，获得了Google的许可之后，才能在其安卓设备上合法安装GMS。华为未来不能得到谷歌许可，意味着未来的华为手机上，将不会内嵌有GMS。
 
+GMS的作用包括使用谷歌核心Apps（即Google应用“全家桶”），包括YouTube，Google Now，Google Play store，Google Play Games，Google Maps（谷歌地图）等，及将基于Google账户的系统数据同步，备份，包括联系人，邮件，文件同步，游戏进度，多人线上联机等。GMS为安卓上的谷歌公司系列应用提供支持
 
-
-**GMS**全称为GoogleMobile Service，即[谷歌移动服务](https://baike.baidu.com/item/谷歌移动服务/6162117)。GMS是Google开发并推动Android的动力，是谷歌程序运行的基础。
-
-GMS提供有GooglePlay、Search、Search by Voice、Gmail、Contact Sync、Calendar Sync、Talk、Maps、Street View、YouTube、Android Market等服务，GMS为安卓上的谷歌公司系列应用提供支持
-
-
+## 后果
 
 缺少 GMS，预计对华为手机的海外市场推广带来致命影响。因为谷歌全家桶APP ，大部分在国内无法使用，且有微信、高德地图等替代品，华为甚至可以推出鸿蒙操作系统取代安卓，因此在国内影响不大。
 
@@ -21,6 +27,22 @@ GMS提供有GooglePlay、Search、Search by Voice、Gmail、Contact Sync、Calen
 ## 海外
 
 海外平台严重依赖GMS，当使用登录海外网站的谷歌商店就必须使用谷歌三件套（Google服务框架、Google play商店和Google Play服务）而这些基于GMS来运行，如没有将无法安装海外应用程序，或将被禁止下载，很多app没有GMS甚至根本无法运行，即使安装成功可以运行也会出现“闪退”，或者是出现”已停止服务”。而没有办法正常使用，但是没有的设备依然可以通过一些方式来获取GMS服务。
+
+
+
+## 解决方案
+
+1..从安卓开发者的角度看，HMS的接口和提供的服务可以做一些和GMS一样的接口和服务，让软件认为HMS就是GMS
+
+2.gms并不是无敌，只是用户习惯。所以，可以通过转变国外的用户的使用方式来解决
+
+3.华为目前来看对待很多事的解决办法都是自研，你不让我用，那好我自己做一个新的出来替代你让用的，现在麻烦的是华为新做出的东西如何让国外认可，首先得到国内的支持。
+
+除此之外，大家还有什么好的建议与意见吗？欢迎在评论区留言！
+
+
+
+
 
 ## 国内
 
