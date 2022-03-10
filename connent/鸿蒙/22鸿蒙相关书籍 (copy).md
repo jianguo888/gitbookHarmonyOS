@@ -2,7 +2,7 @@
 
 关于鸿蒙开发方面的书籍，我今天简单的做了整理，其中部分书籍也有看过，确实写的不错，可以说是对科普鸿蒙相关知识点起到了一点过的作用，那么目前都有哪些书籍呢？
 
-简单的了解一下
+简单的了解一下https://developer.huawei.com/consumer/cn/codelabsPortal/carddetails/HarmonyOS-EtsMultiDeployment
 
 | 序号 | 书籍名称 | 主题/方向 | 作者 | 出版社 | 购买链接 |
 | ---- | -------- | --------- | ---- | ------ | -------- |
@@ -79,7 +79,7 @@
 
 ## 4.《鸿蒙操作系统开发入门经典》
 
-## 购买链接：http://product.dangdang.com/29266322.htm
+## 购买链接：http://product.dangdang.com/29266322.html
 
 内容主题/方向：
 
