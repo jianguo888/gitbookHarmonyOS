@@ -1,0 +1,5 @@
+<div class="container">
+    <toolbar class="tabbar">
+        <toolbar-item for="{{tabbarItems}}" icon='{{$idx == index? $item.simg:$item.img}}' value='{{$item.name}}' onclick="jump($idx)" ></toolbar-item>
+    </toolbar>
+</div>

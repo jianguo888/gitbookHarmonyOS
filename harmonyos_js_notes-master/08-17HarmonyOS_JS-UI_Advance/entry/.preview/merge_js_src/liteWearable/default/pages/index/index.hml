@@ -1,0 +1,10 @@
+<div class="container">
+    <button class="btn" @click="gotoComponentPage">常用组件</button>
+    <button class="btn" @click="gotoContainerPage">常用容器</button>
+    <button class="btn" @click="gotoDialogPage">对话框</button>
+    <button class="btn" @click="gotoLogicPage">逻辑控制</button>
+    <button class="btn" @click="gotoUserInformationPage">代码资源</button>
+    <button class="btn" @click="gotoAdaptionPage">设备适配</button>
+    <button class="btn" @click="gotoModulePage">模块</button>
+    <text>{{aaa}}</text>
+</div>

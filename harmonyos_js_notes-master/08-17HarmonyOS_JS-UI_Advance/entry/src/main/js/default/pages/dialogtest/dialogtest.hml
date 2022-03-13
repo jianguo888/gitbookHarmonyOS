@@ -1,0 +1,12 @@
+<div class="container">
+    <button class="btn" @click="showDialog">通过dialog组件显示对话框</button>
+    <dialog id="dialog">
+        <div class="dialog-content">
+            <text>提示信息</text>
+            <button class="btn" @click="closeDialog">确认</button>
+            <button class="btn" @click="closeDialog">取消</button>
+        </div>
+    </dialog>
+    <button class="btn" @click="showDialogByPrompt">通过prompt模块显示对话框</button>
+    <button class="btn" @click="showToast">通过prompt模块显示Toast对话框</button>
+</div>

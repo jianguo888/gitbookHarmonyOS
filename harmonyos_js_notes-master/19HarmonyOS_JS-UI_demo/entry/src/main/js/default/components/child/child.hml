@@ -1,0 +1,6 @@
+<div class="box">
+   <text>子组件</text>
+   <slot></slot>
+   <slot name="hasName"></slot>
+   <button onclick="childEmit">+++++++++++++++++++</button>
+</div>

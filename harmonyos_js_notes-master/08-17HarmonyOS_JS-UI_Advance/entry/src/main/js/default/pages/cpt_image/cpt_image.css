@@ -1,0 +1,8 @@
+.container {
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+}
+.container .image{
+    object-fit:fill;
+}

@@ -1,0 +1,31 @@
+.container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.stack1 {
+    background-color: yellow;
+    width: 500px;
+    height: 500px;
+}
+.stack2 {
+    background-color: hotpink;
+    width: 400px;
+    height: 400px;
+}
+.stack3 {
+    background-color: red;
+    width: 300px;
+    height: 300px;
+}
+.stack4 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+}
+.stack5 {
+    background-color: green;
+    width: 100px;
+    height: 100px;
+}

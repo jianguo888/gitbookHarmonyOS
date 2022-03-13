@@ -1,0 +1,5 @@
+<div class="container">
+    <video id="video" src="/common/test.mp4"></video>
+    <button @click="startVideo">开始视频</button>
+    <button @click="pauseVideo">暂停视频</button>
+</div>

@@ -1,0 +1,16 @@
+<div class="container">
+    <text class="title">
+        我是一个文本
+    </text>
+
+    <text class="title">
+        <span class="red">红色</span>
+        <span class="green">绿色</span>
+        <span class="blue">蓝色</span>
+    </text>
+
+    <marquee scrollamount="50" loop="30" direction="right">
+        这是一个跑马灯
+    </marquee>
+
+</div>

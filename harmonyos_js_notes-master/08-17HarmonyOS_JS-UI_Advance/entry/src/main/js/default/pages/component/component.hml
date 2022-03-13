@@ -1,0 +1,9 @@
+<div class="container">
+    <button class="btn" @click="gotoCptTextPage">文本类组件</button>
+    <button class="btn" @click="gotoCptProgressPage">进度条</button>
+    <button class="btn" @click="gotoCptInteractivePage">常用交互类组件</button>
+    <button class="btn" @click="gotoCptPickerPage">滑动选择器</button>
+    <button class="btn" @click="gotoCptMenuAndSelectPage">菜单和下拉选择按钮</button>
+    <button class="btn" @click="gotoCptImagePage">图片</button>
+    <button class="btn" @click="gotoCptVideoPage">视频播放器</button>
+</div>

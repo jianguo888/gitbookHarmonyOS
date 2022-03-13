@@ -1,0 +1,55 @@
+<div class="container">
+    <!--button按钮-->
+    <text>button按钮</text>
+    <button>button按钮</button>
+    <!--input按钮-->
+    <text>input按钮</text>
+    <input type="button" value="input按钮"/>
+    <!--复选框-->
+    <text>复选框</text>
+    <div class="row">
+        <input type="checkbox" id="checkbox" checked="true"/>
+        <label target="checkbox">复选选项</label>
+    </div>
+    <!--单选框-->
+    <text>单选框</text>
+    <div class="row">
+        <input type="radio" id="radio1" name="group" value="1"/>
+        <label target="radio1">单选选项1</label>
+        <input type="radio" id="radio2"  name="group" value="2" checked="true"/>
+        <label target="radio2">单选选项2</label>
+    </div>
+    <!--普通文本框-->
+    <text>普通文本框</text>
+    <input type="text" value="" placeholder="请输入文本"/>
+    <!--E-mail文本框-->
+    <text>E-mail文本框</text>
+    <input type="email" value="" placeholder="请输入Email"/>
+    <!--数字文本框-->
+    <text>数字文本框</text>
+    <input type="number" value="" placeholder="请输入数字"/>
+    <!--密码文本框-->
+    <text>密码文本框</text>
+    <input type="password" value="" placeholder="请输入密码"/>
+    <!--日期文本框-->
+    <text>日期文本框</text>
+    <input type="date" value="" placeholder="请输入日期"/>
+    <!--时间文本框-->
+    <text>时间文本框</text>
+    <input type="time" value="" placeholder="请输入时间"/>
+    <!--多行文本框-->
+    <text>多行文本框</text>
+    <textarea placeholder="多行文本框"></textarea>
+    <!--搜索文本框-->
+    <text>搜索文本框</text>
+    <search hint="搜索文本框"/>
+    <!--滑动条-->
+    <text>滑动条</text>
+    <slider value="40"/>
+    <!--评分条-->
+    <text>评分条</text>
+    <rating rating="3.5"/>
+    <!--开关选择器-->
+    <text>开关选择器</text>
+    <switch checked="true" showtext="true" texton="启动" textoff="停用"/>
+</div>

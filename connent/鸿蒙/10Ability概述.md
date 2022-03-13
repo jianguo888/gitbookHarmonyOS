@@ -1,7 +1,5 @@
 10Ability概述
 
-[春节不停更，此文正在参加「星光计划-春节更帖活动](https://harmonyos.51cto.com/posts/9923)
-
 > 作者：坚果
 >
 > 公众号："[大前端之旅](https://mp.weixin.qq.com/s/aJvihD4dzEJyOV3q6_Zeng)"

@@ -1,0 +1,15 @@
+.tabbar {
+    width: 100%;
+    height: 10%;
+}
+.tabcontent {
+    width: 100%;
+    height: 90%;
+}
+.item-content {
+    height: 100%;
+    justify-content: center;
+}
+.item-title {
+    font-size: 60px;
+}

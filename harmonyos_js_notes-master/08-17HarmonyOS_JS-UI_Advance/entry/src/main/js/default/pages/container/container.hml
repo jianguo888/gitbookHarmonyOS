@@ -1,0 +1,8 @@
+<div class="container">
+    <button class="btn" @click="gotoCtnDivFlexPage">基础容器-弹性布局</button>
+    <button class="btn" @click="gotoCtnDivGridPage">基础容器-网格布局</button>
+    <button class="btn" @click="gotoCtnListPage">列表容器</button>
+    <button class="btn" @click="gotoCtnStackPage">堆叠容器</button>
+    <button class="btn" @click="gotoCtnSwiperPage">滑动容器</button>
+    <button class="btn" @click="gotoCtnTabsPage">页签容器</button>
+</div>

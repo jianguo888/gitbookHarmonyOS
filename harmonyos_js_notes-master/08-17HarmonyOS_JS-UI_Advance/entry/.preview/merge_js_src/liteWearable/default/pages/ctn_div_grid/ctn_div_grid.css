@@ -1,0 +1,42 @@
+ .container {
+    width: 400px;
+    height: 400px;
+    display: grid;                      /*网格布局*/
+    grid-template-columns: 1fr 1fr 1fr; /*分列--几个参数就几列，参数代表每列占几份*/
+    grid-template-rows: 1fr 1fr 1fr;    /*分行--几个参数就几行，参数代表每列占几行*/
+    grid-columns-gap: 20px;             /*列间距*/
+    grid-rows-gap: 20px;                /*行间距*/
+
+}
+.grid {
+    width: 100%;
+    height: 100%;
+}
+.left-top {
+    grid-row-start: 0; /*起始行0*/
+    grid-row-end: 1; /*到第一行*/
+    grid-column-start: 0; /*起始列0*/
+    grid-column-end: 0;/*到第一列*/
+    background-color: red;
+}
+.left-bottom {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 0;
+    grid-column-end: 1;
+    background-color: green;
+}
+.right-top {
+    grid-row-start: 0;
+    grid-row-end: 0;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-color: blue;
+}
+.right-bottom {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 2;
+    background-color: purple;
+}

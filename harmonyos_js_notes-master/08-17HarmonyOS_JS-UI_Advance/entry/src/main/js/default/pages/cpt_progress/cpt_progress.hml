@@ -1,0 +1,17 @@
+<div class="container">
+    <!--横向进度条-->
+    <text>横向进度条</text>
+    <progress type="horizontal" percent="50" secondarypercent="70"/>
+    <!--无限进度条-->
+    <text>无限进度条</text>
+    <progress type="circular"/>
+    <!--环形进度条-->
+    <text>环形进度条</text>
+    <progress type="ring" percent="50" secondarypercent="70"/>
+    <!--环形进度条（带刻度）-->
+    <text>环形进度条（带刻度）</text>
+    <progress class="fixedSize" type="scale-ring" percent="50" secondarypercent="70"/>
+    <!--弧形进度条-->
+    <text>弧形进度条</text>
+    <progress type="arc" percent="50"/>
+</div>

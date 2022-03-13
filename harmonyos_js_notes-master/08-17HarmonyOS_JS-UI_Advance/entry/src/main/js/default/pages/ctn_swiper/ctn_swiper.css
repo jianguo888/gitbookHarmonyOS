@@ -1,0 +1,8 @@
+.swiper {
+    width: 100%;
+    height: 200px;
+    indicator-color: white;
+    indicator-size: 14px;
+    indicator-bottom: 20px;
+    indicator-right: 30px;
+}

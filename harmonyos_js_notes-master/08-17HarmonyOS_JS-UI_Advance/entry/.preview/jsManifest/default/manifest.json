@@ -1,0 +1,37 @@
+{
+    "appID": "com.example.javascriptui",
+    "appName": "$string:app_name",
+    "versionName": "1.0",
+    "versionCode": 1000000,
+    "minPlatformVersion": 4,
+    "pages": [
+        "pages/index/index",
+        "pages/component/component",
+        "pages/cpt_text/cpt_text",
+        "pages/cpt_progress/cpt_progress",
+        "pages/cpt_interactive/cpt_interactive",
+        "pages/cpt_picker/cpt_picker",
+        "pages/cpt_menuandselect/cpt_menuandselect",
+        "pages/cpt_image/cpt_image",
+        "pages/cpt_video/cpt_video",
+        "pages/container/container",
+        "pages/ctn_div_flex/ctn_div_flex",
+        "pages/ctn_div_grid/ctn_div_grid",
+        "pages/ctn_list/ctn_list",
+        "pages/ctn_stack/ctn_stack",
+        "pages/ctn_swiper/ctn_swiper",
+        "pages/ctn_tabs/ctn_tabs",
+        "pages/dialogtest/dialogtest",
+        "pages/logic/logic",
+        "pages/userinformation/userinformation",
+        "pages/adaption/adaption",
+        "pages/module/module"
+    ],
+    "deviceType": [
+        "phone"
+    ],
+    "window": {
+        "autoDesignWidth": false,
+        "designWidth": 720
+    }
+}

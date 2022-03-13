@@ -1,0 +1,4 @@
+<div class="container">
+    <image src="/common/img.png" alt="加载图片..." class="image"></image>
+    <!--<image src="https://www.baidu.com/img/flexible/logo/pc/result@2.png" alt="加载图片..."></image>-->
+</div>

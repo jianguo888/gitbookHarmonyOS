@@ -1,0 +1,18 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 30px;        /*文本字号为30px*/
+    text-align: center;     /*居中显示文本*/
+}
+.red {
+    color: red;             /*文本颜色为红色*/
+}
+.blue {
+    color: blue;            /*文本颜色为蓝色*/
+}
+.green {
+    color: green;           /*文本颜色为绿色*/
+}

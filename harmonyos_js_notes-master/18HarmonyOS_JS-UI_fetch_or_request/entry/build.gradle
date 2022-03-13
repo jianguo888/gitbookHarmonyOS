@@ -1,0 +1,46 @@
+apply plugin: 'com.huawei.ohos.hap'
+apply plugin: 'com.huawei.ohos.decctest'
+//For instructions on signature configuration, see https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ide_debug_device-0000001053822404#section1112183053510
+ohos {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\zyh\\.ohos\\config\\auto_debug_myapplication15379653_2850086000365254277.p12')
+            storePassword '00000018D5FBA003234A1033CA62F7A981E1363438085EBA93AF7A6B86DD86F753E3E68456A52E32'
+            keyAlias = 'debugKey'
+            keyPassword '00000018AF30C4A295A8AEA29D78DB9B9200963FB501D7FFA2E9B2F3E74524D82228F63D87B36170'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\zyh\\.ohos\\config\\auto_debug_myapplication15379653_2850086000365254277.p7b')
+            certpath file('C:\\Users\\zyh\\.ohos\\config\\auto_debug_myapplication15379653_2850086000365254277.cer')
+        }
+        release {
+            storeFile file('C:\\Users\\zyh\\Desktop\\Harmony-OS\\zyh.p12')
+            storePassword '00000018885369FED030BCD173FBCD8DB8508BD84A77FF3E366736FEC2F338EEBDFFB17D02F94A99'
+            keyAlias = 'zyh'
+            keyPassword '00000018941CF51503A4F8DE49286D30B3F0DE7B9C85D0A075220C7EA131D9D7806BD78FE7A66D73'
+            signAlg = 'SHA256withECDSA'
+            profile file('C:\\Users\\zyh\\Desktop\\Harmony-OS\\地方Debug.p7b')
+            certpath file('C:\\Users\\zyh\\Desktop\\Harmony-OS\\zyh.cer')
+        }
+    }
+    compileSdkVersion 6
+    defaultConfig {
+        compatibleSdkVersion 4
+    }
+    buildTypes {
+        release {
+            proguardOpt {
+                proguardEnabled false
+                rulesFiles 'proguard-rules.pro'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.har'])
+    testImplementation 'junit:junit:4.13.1'
+    ohosTestImplementation 'com.huawei.ohos.testkit:runner:2.0.0.200'
+}
+decc {
+    supportType = ['html', 'xml']
+}

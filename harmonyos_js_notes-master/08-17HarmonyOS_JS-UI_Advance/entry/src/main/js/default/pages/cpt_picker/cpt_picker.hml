@@ -1,0 +1,14 @@
+<div class="container">
+    <button @click="showTextPicker">文本选择器</button>
+    <picker id="picker-text" type="text" range="{{options}}"></picker>
+    <button @click="showMultiTextPicker">多列文本选择器</button>
+    <picker id="picker-multi-text" type="multi-text" range="{{multi_text_options}}"></picker>
+    <button @click="showDatePicker">日期选择器</button>
+    <picker id="picker-date" type="date"></picker>
+    <button @click="showTimePicker">时间选择器</button>
+    <picker id="picker-time" type="time"></picker>
+    <button @click="showDateTimePicker">日期时间选择器</button>
+    <picker id="picker-datetime" type="datetime"></picker>
+
+    <picker-view type="datetime"></picker-view>
+</div>

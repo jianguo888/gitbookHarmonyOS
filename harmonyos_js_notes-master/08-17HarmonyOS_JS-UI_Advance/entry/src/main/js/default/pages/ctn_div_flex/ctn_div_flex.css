@@ -1,0 +1,10 @@
+.container {
+    display: flex;              /*弹性布局*/
+    flex-direction: column;     /*弹性布局垂直方向*/
+}
+
+.title {
+    width: 300px;               /*宽度300px*/
+    height: 100px;              /*高度100px*/
+    background-color: bisque;   /*背景颜色*/
+}

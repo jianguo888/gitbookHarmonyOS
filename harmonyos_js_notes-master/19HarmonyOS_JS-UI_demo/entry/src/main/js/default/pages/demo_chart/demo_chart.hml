@@ -1,0 +1,13 @@
+<element name='comp' src='../../components/tabbar/tabbar.hml'></element>
+<div class="container">
+    <stack class="chart-region">
+        <image class="chart-background" src="../../common/images/bg-tv.jpg"></image>
+        <chart class="chart-data" type="line" ref="linechart" options="{{lineOps}}" datasets="{{lineData}}"></chart>
+    </stack>
+    <button value="Add data" onclick="addData"></button>
+    <stack class="data-region">
+        <image class="data-background" src="../../common/images/bg-tv.jpg"></image>
+        <chart class="data-bar" type="bar" id="bar-chart" options="{{barOps}}" datasets="{{barData}}"></chart>
+    </stack>
+    <comp index="1"></comp>
+</div>

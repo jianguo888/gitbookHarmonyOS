@@ -1,0 +1,14 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.dialog-content {
+    flex-direction: column;
+    align-items: center;
+}
