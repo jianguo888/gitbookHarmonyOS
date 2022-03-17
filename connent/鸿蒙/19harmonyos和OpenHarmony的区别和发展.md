@@ -45,9 +45,13 @@ HarmonyOS作为新一代的智能终端操作系统，为不同设备的智能�
 
 ## 开发角度上讲解它们的区别：
 
+
+
+![开发角度的区别](https://luckly007.oss-cn-beijing.aliyuncs.com/image/开发角度的区别.png)
+
 ### 1.语言支持
 
-HarmonyOS 主要支持 Java 和 JS 来开发应用（当然还有 C++ 和 C++），而 OpenHarmony 不支持 Java 来开发应用。
+HarmonyOS 主要支持 Java 和 JS ，TS来，以及仓颉开发应用（当然还有 C和 C++），而 OpenHarmony 不支持 Java 来开发应用。
 
 
 

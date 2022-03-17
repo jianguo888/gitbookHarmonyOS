@@ -8,20 +8,28 @@
 
 
 
+
+
+
+
 ## Linux内核
 
 
 
-Linux内核的作用是将应用层序的请求传递给硬件，并充当底层驱动程序，对系统中的各种设备和组件进行寻址。支持模块的动态装卸(裁剪)。Linux内核就是基于这个策略实现的。选择Linux是因为他的开源性以及成熟度。
+
+
+Linux内核的作用是将应用层序的请求传递给硬件，并充当底层驱动程序，对系统中的各种设备和组件进行寻址。支持模块的动态装卸(裁剪)。Linux内核就是基于这个策略实现的。选择Linux是因为他的开源性以及成熟度。关于他的更多介绍，其实公开资料更多，就不做介绍了。
 
 ## LiteOS内核
 
 Huawei LiteOS 是华为自研、开源的物联网实时操作系统，ARM、RISC-V等主流的CPU架构，以轻量级低功耗，快速启动，互联互通，安全等关键能力，为开发者提供 “一站式” 完整软件平台，有效降低开发门槛、缩短开发周期。
 
-LiteOS既可以作为一款RTOS运行在资源受限的MCU上，也可以作为HarmonyOS的子内核运行在资源丰富的SOC平台上。根据硬件的资源情况，LiteOS又可以分为LiteOS-A（内存≥1M） 和LiteOS-M（内存≥128KB）。
+OpenHarmony 轻量级内核是基于IoT领域轻量级物联网操作系统Huawei LiteOS内核演进发展的新一代内核，包含LiteOS-M和LiteOS-A两类内核。
 
 - LiteOS-M
+  - LiteOS-M内核主要应用于轻量系统，面向的MCU一般是百K级内存，可支持MPU隔离，业界类似的内核有FreeRTOS或ThreadX等；
 - LiteOS-A
+  - LiteOS-A内核主要应用于小型系统，面向设备一般是M级内存，可支持MMU隔离，业界类似的内核有Zircon或Darwin等。
 
 ## LiteOS-M
 
@@ -29,10 +37,9 @@ LiteOS-M的设计目标是支持小设备的运行
 
 LiteOS-M的系统架构
 
-OpenHarmony LiteOS-M内核是面向IoT领域构建的轻量级物联网操作系统内核，具有小体积、低功耗、高性能的特点，其代码结构简单，主要包括内核最小功能集、内核抽象层、可选组件以及工程目录等，分为硬件相关层以及硬件无关层，硬件相关层提供统一的HAL（Hardware Abstraction Layer）接口，提升硬件易适配性，不同编译工具链和芯片架构的组合分类，满足AIoT类型丰富的硬件和编译工具链的拓展。其架构图如图1所示：
+OpenHarmony LiteOS-M内核是面向IoT领域构建的轻量级物联网操作系统内核，具有小体积、低功耗、高性能的特点，其代码结构简单，主要包括内核最小功能集、内核抽象层、可选组件以及工程目录等，分为硬件相关层以及硬件无关层，硬件相关层提供统一的HAL（Hardware Abstraction Layer）接口，提升硬件易适配性，不同编译工具链和芯片架构的组合分类，满足AIoT类型丰富的硬件和编译工具链的拓展。
 
-**图 1** OpenHarmony LiteOS-M核内核架构图
-![OpenHarmony-LiteOS-M核内核架构图](https://luckly007.oss-cn-beijing.aliyuncs.com/images/OpenHarmony-LiteOS-M%E6%A0%B8%E5%86%85%E6%A0%B8%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
+
 
 它实现了进程，线程，内存等管理机制，提供了常见IPC，软定时器，等公共模块，可以大幅度降低嵌入式设备开发的难度。
 
@@ -92,9 +99,9 @@ OpenHarmony LiteOS-M内核的编译构建系统是一个基于gn和ninja的组�
 
 OpenHarmony LiteOS-A内核是基于Huawei LiteOS内核演进发展的新一代内核，是面向IoT领域构建的轻量级物联网操作系统。新增了丰富的内核机制、更加全面的POSIX标准接口以及统一驱动框架**HDF**（OpenHarmony Driver Foundation）等，为设备厂商提供了更统一的接入方式，为OpenHarmony的应用开发者提供了更友好的开发体验。
 
-OpenHarmony LiteOS-A内核架构图
 
-![img](https://luckly007.oss-cn-beijing.aliyuncs.com/images/MBXY-CR-468c677df358589e7cdd7f1c186c491c.png)
+
+![image-20220317165722121](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20220317165722121.png)
 
 ### 目录
 
@@ -140,6 +147,8 @@ OpenHarmony LiteOS-A内核架构图
 
 
 OpenHarmony LiteOS-A内核支持Hi3518EV300、Hi3516DV300单板，开发者可基于两种单板开发运行自己的应用程序。
+
+以上就是关于内核的一些基本介绍。
 
 
 
