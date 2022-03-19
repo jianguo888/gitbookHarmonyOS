@@ -63,7 +63,7 @@
 - [01OpenHarmony的基础介绍](connent/OpenHarmony/01OpenHarmony的介绍.md)
 - [02OpenHarmony技术架构](connent/OpenHarmony/02OpenHarmony技术架构.md)
 - [03OpenHarmony技术架构的细节](connent/OpenHarmony/03OpenHarmony技术架构的细节.md)
-- [04组件](connent/OpenHarmony/04组件.md)
+- [04OpenHarmony的三大设计特点](connent/OpenHarmony/04OpenHarmony的三大设计特点.md)
 - [05创建第一个oh应用](connent/OpenHarmony/05创建第一个oh应用.md)
 - [06ETS开发FAQ](connent/OpenHarmony/06ETS开发FAQ.md)
 - [07什么是GMS](connent/OpenHarmony/07什么是GMS.md)
