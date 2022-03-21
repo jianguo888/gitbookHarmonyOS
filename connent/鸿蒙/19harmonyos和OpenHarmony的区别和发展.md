@@ -91,6 +91,14 @@ OpenHarmony 的签名我只想吐槽一句，既然 open 为何还必须要签�
 
 
 
+### 5、创建项目方式不同
+
+### 6、工程目录结构不同
+
+OpenHarmony 只有js目录，没有java目录
+
+
+
 ## 参考文档：
 
 https://developer.huawei.com/consumer/cn/doc/distribution/service/overview-0000001193306834
