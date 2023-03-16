@@ -1,0 +1,26 @@
+/* xxx.css */
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    left: 0px;
+    top: 0px;
+    width: 454px;
+    height: 454px;
+}
+.animator {
+    width: 70px;
+    height: 70px;
+}
+.btn-box {
+    width: 264px;
+    height: 120px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.btn {
+    border-radius: 8px;
+    width: 120px;
+    margin-top: 8px;
+}

@@ -1,0 +1,18 @@
+<tabs class="tabs">
+    <tab-bar class="tabbar" mode="fixed">
+        <text class="tab-text">页面1</text>
+        <text class="tab-text">页面2</text>
+        <text class="tab-text">页面3</text>
+    </tab-bar>
+    <tab-content class="tabcontent">
+        <div class="item-content">
+            <text class="item-title">页面1</text>
+        </div>
+        <div class="item-content" >
+            <text class="item-title">页面2</text>
+        </div>
+        <div class="item-content" >
+            <text class="item-title">页面3</text>
+        </div>
+    </tab-content>
+</tabs>

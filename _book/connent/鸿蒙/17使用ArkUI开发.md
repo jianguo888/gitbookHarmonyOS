@@ -1,12 +1,12 @@
-# 使用ArkUI开发
+# 使用ArkUI开发HarmonyOS
 
-[春节不停更，此文正在参加「星光计划-春节更帖活动](https://harmonyos.51cto.com/posts/9923)
+
 
 > 作者：坚果
 >
 > 公众号："[大前端之旅](https://mp.weixin.qq.com/s/aJvihD4dzEJyOV3q6_Zeng)"
 >
-> 华为云享专家，InfoQ签约作者，阿里云专家博主，51CTO博客首席体验官，[开源项目GVA成员之一](https://www.gin-vue-admin.com/)，专注于大前端技术的分享，包括Flutter,小程序,安卓，VUE，JavaScript。
+> 华为云享专家，InfoQ签约作者，阿里云专家博主，51CTO博客首席体验官，[开源项目GVA成员之一](https://www.gin-vue-admin.com/)，专注于大前端技术的分享，包括Flutter,鸿蒙，小程序,安卓，VUE，JavaScript。
 
 
 
@@ -26,7 +26,7 @@
 - **动画能力：**方舟开发框架对于UI界面的美化，除了组件内置动画效果外，也提供了属性动画、转场动画和自定义动画能力。
 - **UI交互：**方舟开发框架提供了多种交互能力，满足应用在不同平台通过不同输入设备均可正常进行UI交互响应，默认适配了触摸手势、遥控器、鼠标等输入操作，同时也提供事件通知能力。
 - **绘制：**方舟开发框架提供了多种绘制能力，以满足开发者绘制自定义形状的需求，支持图形绘制、颜色填充、文本绘制、图片绘制等。
-- **平台API****通道：**方舟开发框架提供了API扩展机制，平台能力通过此种机制进行封装，提供风格统一的JS接口。
+- **平台API**通道方舟开发框架提供了API扩展机制，平台能力通过此种机制进行封装，提供风格统一的JS接口。
 
 ## 选择方案
 
@@ -67,7 +67,7 @@
 
 基于JS扩展的类Web开发范式的方舟开发框架是一种跨设备的高性能UI开发框架，支持声明式编程和跨设备多态UI。
 
-关于组件和接口的详细参考文档请参见[JS API参考](https://developer.harmonyos.com/cn/docs/documentation/doc-references/js-apis-overview-0000001056361791)。
+
 
 ### 基础能力
 
@@ -95,7 +95,7 @@
 
 - Application
 
-  应用层表示开发者开发的[FA](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ability-ability-overview-0000000000029852)应用，这里的FA应用特指JS FA应用。使用Java开发FA应用请参考[Java UI框架](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ui-java-overview-0000000000500404)。
+  应用层表示开发者开发的FA应用，这里的FA应用特指JS FA应用。
 
 - Framework
 

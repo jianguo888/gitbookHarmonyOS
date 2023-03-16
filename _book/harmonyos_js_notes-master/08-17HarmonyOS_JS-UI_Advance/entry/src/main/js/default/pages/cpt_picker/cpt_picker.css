@@ -1,0 +1,9 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+picker-view {
+    margin: 30px;
+}

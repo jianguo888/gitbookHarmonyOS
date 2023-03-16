@@ -1,4 +1,4 @@
-# 实现HarmonyOS应用（ets）
+# 五步实现HarmonyOS应用（ets）
 
 [春节不停更，此文正在参加「星光计划-春节更帖活动](https://harmonyos.51cto.com/posts/9923)
 
@@ -20,7 +20,7 @@
 
 1. 打开DevEco Studio
 
-![image-20220122190612607](C:\Users\85285\AppData\Roaming\Typora\typora-user-images\image-20220122190612607.png)
+![image-20220125133231620](https://luckly007.oss-cn-beijing.aliyuncs.com/image/image-20220125133231620.png)
 
 2.创建一个新工程，选择模板，如Empty Ability：
 

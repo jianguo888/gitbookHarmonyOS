@@ -1,0 +1,15 @@
+<div class="container">
+    <!--菜单-->
+    <button @click="showMenu">显示菜单</button>
+    <menu id="menu">
+        <option value="opt1">菜单选项1</option>
+        <option value="opt2">菜单选项2</option>
+        <option value="opt3">菜单选项3</option>
+    </menu>
+    <!--下拉选择按钮-->
+    <select>
+        <option value="opt1">选项1</option>
+        <option value="opt2">选项2</option>
+        <option value="opt3">选项3</option>
+    </select>
+</div>

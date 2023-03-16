@@ -1,0 +1,14 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+video {
+    height: 540px;
+    width: 720px;
+}
+
+button {
+    margin-top: 30px;
+}

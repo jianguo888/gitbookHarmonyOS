@@ -1,0 +1,18 @@
+.container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    flex-direction: row;
+    justify-content: center;
+}
+
+textarea {
+    height: 200px;
+}
+
+text {
+    margin-top: 20px;
+}

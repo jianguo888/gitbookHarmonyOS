@@ -1,0 +1,5 @@
+<swiper class="swiper">
+    <image src="/common/swiper1.png"/>
+    <image src="/common/swiper2.png"/>
+    <image src="/common/swiper3.png"/>
+</swiper>

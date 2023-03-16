@@ -1,0 +1,6 @@
+<div class="container">
+    <text>{{data1}}</text>
+
+    <text id="text" ref="refText">{{value}}</text>
+    <button onclick="goback">返回</button>
+</div>

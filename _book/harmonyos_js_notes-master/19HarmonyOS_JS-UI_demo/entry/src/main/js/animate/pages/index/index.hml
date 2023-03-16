@@ -1,0 +1,9 @@
+<div class="container">
+    <image-animator class="animator" ref="animator" images="{{frames}}" duration="1s" />
+    <div class="btn-box">
+        <input class="btn" type="button" value="start" @click="handleStart" />
+        <input class="btn" type="button" value="stop" @click="handleStop" />
+        <input class="btn" type="button" value="pause" @click="handlePause" />
+        <input class="btn" type="button" value="resume" @click="handleResume" />
+    </div>
+</div>

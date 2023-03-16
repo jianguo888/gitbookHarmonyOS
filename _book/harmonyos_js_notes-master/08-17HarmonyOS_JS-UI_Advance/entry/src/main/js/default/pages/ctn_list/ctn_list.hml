@@ -1,0 +1,16 @@
+<list>
+    <list-item-group>
+        <list-item class="item"><text>分组1</text></list-item>
+        <list-item class="item"><text>项目1-1</text></list-item>
+        <list-item class="item"><text>项目1-2</text></list-item>
+        <list-item class="item"><text>项目1-3</text></list-item>
+    </list-item-group>
+    <list-item-group>
+        <list-item class="item"><text>分组2</text></list-item>
+        <list-item class="item"><text>项目2-1</text></list-item>
+        <list-item class="item"><text>项目2-2</text></list-item>
+        <list-item class="item"><text>项目2-3</text></list-item>
+    </list-item-group>
+    <list-item class="item"><text>项目1</text></list-item>
+    <list-item class="item"><text>项目2</text></list-item>
+</list>

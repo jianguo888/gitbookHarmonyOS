@@ -1,0 +1,6 @@
+<element name="comp" src="../../common/information.hml"></element>
+<div class="container">
+    <text class="title">用户ID: {{userinformation.userid}}</text>
+    <text class="title">用户名称： {{userinformation.username}}</text>
+    <comp class="title" age1="{{userinformation.age}}"></comp>
+</div>

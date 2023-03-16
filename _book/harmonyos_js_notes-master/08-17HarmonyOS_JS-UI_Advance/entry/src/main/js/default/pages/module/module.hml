@@ -1,0 +1,12 @@
+<div class="container">
+    <button onclick="obtainAppInfo">应用与配置信息</button>
+    <button onclick="terminateThisApp">退出当前应用</button>
+    <button onclick="pushNotification">通知消息</button>
+    <button onclick="obtainDeviceInfo">设备信息</button>
+    <button onclick="checkJavaUIAppInstalled">检查JavaUI应用是否安装</button>
+    <button onclick="obtainGeoInformation">获得当前地理位置</button>
+    <button onclick="subcribeGeoInformation">订阅地理位置信息</button>
+    <button onclick="unsubcribeGeoInformation">取消订阅地理位置信息</button>
+    <button onclick="shortVibrate">短震动</button>
+    <button onclick="longVibrate">长震动</button>
+</div>

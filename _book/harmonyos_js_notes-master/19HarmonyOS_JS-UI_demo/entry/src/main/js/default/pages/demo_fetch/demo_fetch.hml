@@ -1,0 +1,9 @@
+<element name='comp' src='../../components/tabbar/tabbar.hml'></element>
+<div class="container">
+    <text class="title">
+        Hello {{ title }}
+    </text>
+    <div for="{{winfo}}"><text key="{{$item.id}}">{{$item.name}}</text></div>
+    <text>{{winfo}}</text>
+    <comp index="3"></comp>
+</div>

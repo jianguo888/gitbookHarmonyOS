@@ -1,0 +1,13 @@
+<element name='comp' src='../../components/tabbar/tabbar.hml'></element>
+<element name='child' src='../../components/child/child.hml'></element>
+<div class="container">
+    <text class="title">
+        首页
+    </text>
+    <text>{{num}}</text>
+    <child @child_emit="changeNum">
+        <div><text>父组件给子组件匿名slot传递</text></div>
+        <div><text slot="hasName">父组件给子组件具名slot传递</text></div>
+    </child>
+    <comp index="0"></comp>
+</div>

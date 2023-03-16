@@ -1,7 +1,5 @@
 10Ability概述
 
-[春节不停更，此文正在参加「星光计划-春节更帖活动](https://harmonyos.51cto.com/posts/9923)
-
 > 作者：坚果
 >
 > 公众号："[大前端之旅](https://mp.weixin.qq.com/s/aJvihD4dzEJyOV3q6_Zeng)"
@@ -178,15 +176,13 @@ Page会在进入INACTIVE状态后来到前台，然后系统调用此回调。Pa
   当 **AbilitySlice** 处于前台且具有焦点时，其生命周期状态随着所属 **Page Ability**的生命周期状态的变化而变化。当一个 **Page Ability**拥
 有多个 **AbilitySlice** 时，例如：**MyAbility** 下有 **FooAbilitySlice** 和 **BarAbilitySlice**，当前 **FooAbilitySlice** 处于前台并获得焦点，并即将导航到 **BarAbilitySlice**，在此期间的生命周期状态变化顺序为：
 
-1. **FooAbilitySlice** 从 ACTIVE 状态变为 INACTIVE 状态。
-2. **BarAbilitySlice** 则从 INITIAL 状态首先变为 INACTIVE 状态，然后变为 ACTIVE 状态（假定此前 **BarAbilitySlice** 未曾
+1.**FooAbilitySlice** 从 ACTIVE 状态变为 INACTIVE 状态。
 
-启动）。
+2.**BarAbilitySlice** 则从 INITIAL 状态首先变为 INACTIVE 状态，然后变为 ACTIVE 状态（假定此前 **BarAbilitySlice** 未曾启动）。
 
-1. **FooAbilitySlice** 从 INACTIVE 状态变为 BACKGROUND 状态。对应两个 **slice** 的生命周期方法回调顺序为：
+3.**FooAbilitySlice** 从 INACTIVE 状态变为 BACKGROUND 状态。对应两个 **slice** 的生命周期方法回调顺序为：
 
-**FooAbilitySlice.onInactive()** --> **BarAbilitySlice.onStart()** --> **BarAbilitySlice.onActive()** -
--> **FooAbilitySlice.onBackground()**
+**FooAbilitySlice.onInactive()** --> **BarAbilitySlice.onStart()** --> **BarAbilitySlice.onActive()** --> **FooAbilitySlice.onBackground()**
 在整个流程中，**MyAbility** 始终处于 ACTIVE 状态。但是，当 **Page Ability**被系统销毁时，其所有已
 实例化的 AbilitySlice 将联动销毁，而不仅是处于前台的 AbilitySlice。
 
@@ -204,81 +200,81 @@ Service是单实例的。在一个设备上，相同的Service只会存在一个
 
 ### 创建Service
 
-介绍如何创建一个Service。
+首先介绍如何创建一个Service。
 
-1. 创建Ability的子类，实现Service相关的生命周期方法。Service也是一种Ability，Ability为Service提供了以下生命周期方法，开发者可以重写这些方法，来添加其他Ability请求与Service Ability交互时的处理方法。
+创建Ability的子类，实现Service相关的生命周期方法。Service也是一种Ability，Ability为Service提供了以下生命周期方法，开发者可以重写这些方法，来添加其他Ability请求与Service Ability交互时的处理方法。
 
-   onStart()
+onStart()
 
-   该方法在创建Service的时候调用，用于Service的初始化。在Service的整个生命周期只会调用一次，调用时传入的Intent应为空。
+该方法在创建Service的时候调用，用于Service的初始化。在Service的整个生命周期只会调用一次，调用时传入的Intent应为空。
 
-   onCommand()
+onCommand()
 
-   在Service创建完成之后调用，该方法在客户端每次启动该Service时都会调用，开发者可以在该方法中做一些调用统计、初始化类的操作。
+在Service创建完成之后调用，该方法在客户端每次启动该Service时都会调用，开发者可以在该方法中做一些调用统计、初始化类的操作。
 
-   onConnect()
+onConnect()
 
-   在Ability和Service连接时调用，该方法返回IRemoteObject对象，开发者可以在该回调函数中生成对应Service的IPC通信通道，以便Ability与Service交互。Ability可以多次连接同一个Service，系统会缓存该Service的IPC通信对象，只有第一个客户端连接Service时，系统才会调用Service的onConnect方法来生成IRemoteObject对象，而后系统会将同一个RemoteObject对象传递至其他连接同一个Service的所有客户端，而无需再次调用onConnect方法。
+在Ability和Service连接时调用，该方法返回IRemoteObject对象，开发者可以在该回调函数中生成对应Service的IPC通信通道，以便Ability与Service交互。Ability可以多次连接同一个Service，系统会缓存该Service的IPC通信对象，只有第一个客户端连接Service时，系统才会调用Service的onConnect方法来生成IRemoteObject对象，而后系统会将同一个RemoteObject对象传递至其他连接同一个Service的所有客户端，而无需再次调用onConnect方法。
 
-   onDisconnect()
+onDisconnect()
 
-   在Ability与绑定的Service断开连接时调用。
+在Ability与绑定的Service断开连接时调用。
 
-   onStop()
+onStop()
 
-   在Service销毁时调用。Service应通过实现此方法来清理任何资源，如关闭线程、注册的侦听器等。
+在Service销毁时调用。Service应通过实现此方法来清理任何资源，如关闭线程、注册的侦听器等。
 
-   创建Service的代码示例如下：
+创建Service的代码示例如下：
 
-   ```
-   public class ServiceAbility extends Ability {
-       @Override
-       public void onStart(Intent intent) {
-           super.onStart(intent);
-       }
-   
-       @Override
-       public void onCommand(Intent intent, boolean restart, int startId) {
-           super.onCommand(intent, restart, startId);
-       }
-   
-       @Override
-       public IRemoteObject onConnect(Intent intent) {
-           return super.onConnect(intent);
-       }
-   
-       @Override
-       public void onDisconnect(Intent intent) {
-           super.onDisconnect(intent);
-       }
-   
-       @Override
-       public void onStop() {
-           super.onStop();
-       }
-   }
-   ```
+```
+public class ServiceAbility extends Ability {
+    @Override
+    public void onStart(Intent intent) {
+        super.onStart(intent);
+    }
 
-2. 注册Service。
+    @Override
+    public void onCommand(Intent intent, boolean restart, int startId) {
+        super.onCommand(intent, restart, startId);
+    }
 
-   Service也需要在应用配置文件中进行注册，注册类型type需要设置为service。
+    @Override
+    public IRemoteObject onConnect(Intent intent) {
+        return super.onConnect(intent);
+    }
 
-   ```
-   {
-       "module": {
-           "abilities": [         
-               {    
-                   "name": ".ServiceAbility",
-                   "type": "service",
-                   "visible": true
-                   ...
-               }
-           ]
-           ...
-       }
-       ...
-   }
-   ```
+    @Override
+    public void onDisconnect(Intent intent) {
+        super.onDisconnect(intent);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+    }
+}
+```
+
+2.注册Service。
+
+Service也需要在应用配置文件中进行注册，注册类型type需要设置为service。
+
+```
+{
+    "module": {
+        "abilities": [         
+            {    
+                "name": ".ServiceAbility",
+                "type": "service",
+                "visible": true
+                ...
+            }
+        ]
+        ...
+    }
+    ...
+}
+```
 
 ### 启动Service
 
@@ -389,7 +385,7 @@ protected IRemoteObject onConnect(Intent intent) {
 
 ### Service Ability生命周期
 
-与Page类似，Service也拥有生命周期，如[图1](https://developer.harmonyos.com/cn/docs/documentation/doc-guides/ability-service-lifecycle-0000000000044472#ZH-CN_TOPIC_0000001077123656__fig49671548164217)所示。根据调用方法的不同，其生命周期有以下两种路径：
+与Page类似，Service也拥有生命周期，如图1所示。根据调用方法的不同，其生命周期有以下两种路径：
 
 - 启动
 
@@ -469,19 +465,16 @@ URI示例：
 
 - 跨设备场景：dataability://*device_id*/*com.domainname.dataability.persondata*/*person*/*10*
 
-- 本地设备：dataability:///
+- 本地设备：dataability:///com.domainname.dataability.persondata/person/10
 
-  com.domainname.dataability.persondata/person/10
+  说明：本地设备的“device_id”字段为空，因此在“dataability:”后面有三个“/”。
 
-  说明
-
-  本地设备的“device_id”字段为空，因此在“dataability:”后面有三个“/”。
 
 
 
 ## 总结
 
- 说实话写这一篇文章花费了一番功夫，不断的浏览官网上的文档然后结合实际来写，写的不是很好，请勿见怪，另外就是觉得官网的教程只是一部分，更多的需要开发者自行去探索和发现，正所谓师傅领进门，修行在个人，鸿蒙需要成长，我们开发者同样也要成长，也许不会前进的路上会很坎坷，但经历过后就会发现另一番风景，我是初学者，保持初学的态度和动力，感谢您的阅读，山高水长，后会有期！
+ 说实话写这一篇文章花费了一番功夫，不断的浏览官网上的文档然后结合实际来写，写的不是很好，请勿见怪，另外就是觉得官网的教程只是一部分，更多的需要开发者自行去探索和发现，正所谓师傅领进门，修行在个人，鸿蒙需要成长，我们开发者同样也要成长，也许不会前进的路上会很坎坷，但经历过后就会发现另一番风景，对于鸿蒙，我是初学者，所以更多是以初学者的态度来记录。而且我学习的重要的途径就是这样，一边学习，一边记录，这样在以后要用到的时候查看自己的笔记就好。最后希望我们大家一起进步。为鸿蒙的发展与宣传贡献自己的一份力量。
 
 
 
